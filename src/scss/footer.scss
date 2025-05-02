@@ -1,0 +1,29 @@
+.footer {
+  background-image: url(../img/footer/footer-top.png);
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: $_second_color;
+  background-color: $_main_color;
+  padding-top: 37.5px;
+  padding-bottom: 24px;
+  outline: 1px solid red;
+}
+.policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+  margin-bottom: 37.5px;
+  line-height: 1.3;
+}
+// .policy-link {
+
+// }
+
+.footer-text {
+  margin: 0 auto;
+  width: 192px;
+  text-align: center;
+  line-height: 1.4;
+}
