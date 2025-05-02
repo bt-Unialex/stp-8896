@@ -13,7 +13,7 @@
     padding-bottom: 40px;
   }
 }
-.policy {
+.footer-policy {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,9 +30,8 @@
 
 .footer-text {
   margin: 0 auto;
-  width: 192px;
+  width: 188px;
   text-align: center;
-  line-height: 1.4;
   @include media(desktop) {
     width: 100%;
     font-size: 14px;
