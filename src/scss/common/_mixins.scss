@@ -31,6 +31,10 @@ screen types:
     @media screen and (min-width: $desktop) {
       @content;
     }
+  } @else if $_screen == 2xres {
+    @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @content;
+    }
   }
 }
 
