@@ -2,7 +2,27 @@
   <div class="container">
     <h1 class="hero-title">Unwind Your Mind Through Artful Play</h1>
     <div class="hero-image">
-      <img src="/img/mobile/hero/diamant-hero-mobile@1x.png" alt="diamant" />
+      <picture class="hero-image-picture">
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            /img/hero/diamant-hero-mobile@1x.png 1x,
+            /img/hero/diamant-hero-mobile@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/hero/diamant_hero-desk@1x.png 1x,
+            /img/hero/diamant_hero-desk@1x.png 2x
+          "
+        />
+        <img
+          src="/img/hero/diamant-hero-mobile@1x.png"
+          alt="diamant"
+          loading="lazy"
+        />
+      </picture>
     </div>
     <button class="hero-btn">
       <svg class="hero-btn-icon" width="24" height="24">
