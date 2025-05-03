@@ -71,6 +71,15 @@
     padding-left: 24px;
     position: relative;
     line-height: 1.5;
+    & > .policy-description {
+      margin-top: 8px;
+    }
+    &:has(.policy-name):not(:last-child) {
+      margin-bottom: 8px;
+    }
+    &:has(.policy-name)::before {
+      font-weight: 700;
+    }
   }
   &-point::before {
     position: absolute;
