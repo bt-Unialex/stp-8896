@@ -1,5 +1,88 @@
 <header class="header">
-    <div class="container">
-        header
+  <div class="container">
+    <a class="header-logo" href="index.html">
+      <picture class="header-logo-image">
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            /img/header/logo-mob@1x.png 1x,
+            /img/header/logo-mob@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/header/logo-desk@1x.png 1x,
+            /img/header/logo-desk@2x.png 2x
+          "
+        />
+        <img src="/img/header/logo-mob@1x.png" alt="logo" loading="lazy" />
+      </picture>
+    </a>
+    <button class="header-mobmenu-btn" type="button" data-action="modal-open">
+      <svg class="header-mobmenu-icon" width="40" height="40">
+        <use href="/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="index.html" class="header-nav-link">Home Page</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#description" class="header-nav-link">Game Description</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#advantages" class="header-nav-link">Advantages</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#features" class="header-nav-link">Main Gameplay Features</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#reviews" class="header-nav-link">User Reviews</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#howtoplay" class="header-nav-link">How to Play</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="#faq" class="header-nav-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobmenu-overlay" id="mobmenu-overlay" data-visible="close">
+      <div class="mobmenu-modal">
+        <button class="mobmenu-close-button" data-action="modal-close">
+          <svg class="mobmenu-close-icon" width="40" height="40">
+            <use href="/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobmenu-nav-list">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="index.html" class="mobmenu-nav-link">Home Page</a>
+          </li>
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="#description" class="mobmenu-nav-link">Game Description</a>
+          </li>
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="#advantages" class="mobmenu-nav-link">Advantages</a>
+          </li>
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="#features" class="mobmenu-nav-link"
+              >Main Gameplay Features</a
+            >
+          </li>
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="#reviews" class="mobmenu-nav-link">User Reviews</a>
+          </li>
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="#howtoplay" class="mobmenu-nav-link">How to Play</a>
+          </li>
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
+            <a href="#faq" class="mobmenu-nav-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </header>

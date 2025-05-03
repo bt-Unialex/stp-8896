@@ -1,0 +1,153 @@
+.header {
+    padding: 10px 0;
+    background: #1c2e58;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    @include media(desktop) {
+        padding: 24px 0;
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    
+}
+
+.header-logo-image {
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    @include media(desktop) {
+        border-radius: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+}
+.header-mobmenu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    stroke-width: 3px;
+    stroke: #fdfdfd;
+
+    @include media(desktop) {
+        display: none;
+    }
+}
+
+.header-mobmenu-icon {
+}
+
+.header-nav {
+    display: none;
+
+    @include media(desktop) {
+        display: flex;
+    }
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 8px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #fafafa;
+}
+.header-nav-item {
+    height: 37px;
+    border: 2px solid #fd688d;
+    border-radius: 16px;
+    padding: 6px 14px;    
+}
+.header-nav-link {
+
+}
+
+.mobmenu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 999;
+}
+
+[data-visible="open"] {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 500ms ease;
+}
+
+[data-visible="close"] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 500ms ease;
+}
+
+.mobmenu-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 261px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    background: #b8ccde;
+
+    padding: 91.5px 16px 146.5px;
+}
+
+.mobmenu-close-button {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    stroke-width: 3px;
+    stroke: #fdfdfd;
+}
+.mobmenu-close-icon {
+}
+
+.mobmenu-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #614796;
+}
+.mobmenu-nav-item {
+    
+}
+.mobmenu-nav-link {
+}
