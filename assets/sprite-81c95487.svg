@@ -1,0 +1,17 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-chevron-back" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="3.7647" d="M20.873 7.529l-8.471 8.471 8.471 8.471"></path>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 33 32">
+            <path stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.4" d="M17.905 22.4l12.495-12.8"></path>
+            <path stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.4" d="M17.6 9.6l12.495 12.8"></path>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.3415" d="M14.704 9.427h15.61M14.704 15.671h15.61M14.704 21.915h15.61"></path>
+        </symbol>
+        <symbol id="back" viewBox="0 0 16 16">
+            <path d="M10.25 3.5L5.75 8L10.25 12.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round" />
+        </symbol>
+    </defs>
+</svg>
