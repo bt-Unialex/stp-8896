@@ -19,7 +19,7 @@
         <img src="/img/header/logo-mob@1x.png" alt="logo" loading="lazy" />
       </picture>
     </a>
-    <button class="header-mobmenu-btn" type="button">
+    <button class="header-mobmenu-btn" type="button" data-action="modal-open">
       <svg class="header-mobmenu-icon" width="40" height="40">
         <use href="/img/sprite.svg#icon-menu"></use>
       </svg>
@@ -49,36 +49,36 @@
         </li>
       </ul>
     </nav>
-    <div class="mobmenu-overlay">
+    <div class="mobmenu-overlay" id="mobmenu-overlay" data-visible="close">
       <div class="mobmenu-modal">
-        <button class="mobmenu-close-button">
+        <button class="mobmenu-close-button" data-action="modal-close">
           <svg class="mobmenu-close-icon" width="40" height="40">
             <use href="/img/sprite.svg#icon-close"></use>
           </svg>
         </button>
 
         <ul class="mobmenu-nav-list">
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="index.html" class="mobmenu-nav-link">Home Page</a>
           </li>
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="#description" class="mobmenu-nav-link">Game Description</a>
           </li>
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="#advantages" class="mobmenu-nav-link">Advantages</a>
           </li>
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="#features" class="mobmenu-nav-link"
               >Main Gameplay Features</a
             >
           </li>
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="#reviews" class="mobmenu-nav-link">User Reviews</a>
           </li>
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="#howtoplay" class="mobmenu-nav-link">How to Play</a>
           </li>
-          <li class="mobmenu-nav-item">
+          <li class="mobmenu-nav-item" id="mobmenu-nav-item">
             <a href="#faq" class="mobmenu-nav-link">FAQ</a>
           </li>
         </ul>

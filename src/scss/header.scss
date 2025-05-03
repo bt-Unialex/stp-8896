@@ -93,10 +93,18 @@
     z-index: 999;
 }
 
-.mobmenu-overlay.is-open {
+[data-visible="open"] {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: opacity 500ms ease;
+}
+
+[data-visible="close"] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 500ms ease;
 }
 
 .mobmenu-modal {
