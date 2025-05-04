@@ -29,7 +29,11 @@
 
     @include media(desktop) {
         padding-block: 236px 128.5px;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "image title"
+            "image button";
     }
 }    
 
@@ -43,10 +47,11 @@
     color: #19284c;
 
     @include media(desktop) {
-        order: 1;
-        
+        grid-area: title;
         font-size: 56px;
         text-align: start;
+        width: auto;
+        margin: 0;
     }
 }
 
@@ -54,9 +59,7 @@
     margin: 64px auto;
 
     @include media(desktop) {
-        order: 0;
-        display: flex;
-        justify-content: center;
+        grid-area: image;
         margin: 0;
     }
 }
@@ -85,8 +88,8 @@
     color: #fafafa;
 
     @include media(desktop) {
-        order: 2;
-
+        grid-area: button;
+        justify-self: center;
         width: 246px;
         height: 60px;
     }
