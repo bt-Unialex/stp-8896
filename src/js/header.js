@@ -20,10 +20,6 @@ navLinks.forEach(link => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (menuLinks.length > 0) {
-    menuLinks[0].classList.add('active');
-  }
-
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
       menuLinks.forEach(l => l.classList.remove('active'));
