@@ -9,6 +9,9 @@
       font-size: 48px;
     }
   }
+  @include media(desktop) {
+    height: 616px;
+  }
 }
 .feats {
   background-image: url(../img/features/feat_poly_m.png),
@@ -21,9 +24,21 @@
     4px 176.3px, 4px 97.5px, 4px 24px;
 
   padding: 37.87px 21.01px 23.23px 51.99px;
-  &-item:not(:last-child) {
-    margin-bottom: 21.87px;
+  display: flex;
+  flex-direction: column;
+  gap: 21.87px;
+
+  &-item {
+    &:nth-child(1),
+    &:nth-child(6) {
+      order: -1;
+    }
+    &:nth-child(4),
+    &:nth-child(7) {
+      order: 1;
+    }
   }
+
   &-name {
     font-size: 13px;
     font-weight: 400;
@@ -43,22 +58,8 @@
   @include media(desktop) {
     background: none;
     padding: 0;
-    height: 595.81px;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      left: 410.18px;
-      top: 219.14px;
-      width: 214px;
-      height: 194px;
-      transform: rotate(21deg);
-      background-image: url(../img/features/feat_diamant_d.png);
-      @include media(2xres) {
-        background-image: url(../img/features/feat_diamant_d@2x.png);
-      }
-    }
+    gap: 0;
+    // height: 595.81px;
   }
 }
 @include media(desktop) {
@@ -71,40 +72,91 @@
     flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
+    // &:nth-child(1) {
+    //   padding: 0 85.36px;
+    //   background-image: url(../img/features/feat_poly_d1.png);
+    //   transform: translate(-8.73px, 19.55px);
+    // }
+    // &:nth-child(2) {
+    //   padding: 0 80.71px;
+    //   background-image: url(../img/features/feat_poly_d2.png);
+    //   transform: translate(339.61px, -100%);
+    // }
+    // &:nth-child(3) {
+    //   padding: 0 101.15px 0 75.85px;
+    //   background-image: url(../img/features/feat_poly_d3.png);
+    //   transform: translate(0, calc(-2 * 100% + 180.14px));
+    // }
+    // &:nth-child(4) {
+    //   padding: 0 58.5px;
+    //   background-image: url(../img/features/feat_poly_d4.png);
+    //   transform: translate(158.9px, calc(-3 * 100% + 324.27px));
+    // }
+    // &:nth-child(5) {
+    //   padding: 0 85.36px;
+    //   background-image: url(../img/features/feat_poly_d5.png);
+    //   transform: translate(664.73px, calc(-4 * 100% + 60.14px));
+    // }
+    // &:nth-child(6) {
+    //   padding: 0 80.71px;
+    //   background-image: url(../img/features/feat_poly_d6.png);
+    //   transform: translate(664.73px, calc(-5 * 100% + 220.29px));
+    // }
+    // &:nth-child(7) {
+    //   padding: 0 94.81px;
+    //   background-image: url(../img/features/feat_poly_d7.png);
+    //   transform: translate(516.9px, calc(-6 * 100% + 355.81px));
+    // }
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(7) {
+      order: 0;
+    }
+
     &:nth-child(1) {
       padding: 0 85.36px;
       background-image: url(../img/features/feat_poly_d1.png);
       transform: translate(-8.73px, 19.55px);
     }
-    &:nth-child(2) {
+    &:nth-child(6) {
       padding: 0 80.71px;
       background-image: url(../img/features/feat_poly_d2.png);
-      transform: translate(339.61px, -100%);
+      transform: translate(339.61px, -5 * 100%);
     }
-    &:nth-child(3) {
+    &:nth-child(2) {
       padding: 0 101.15px 0 75.85px;
       background-image: url(../img/features/feat_poly_d3.png);
-      transform: translate(0, calc(-2 * 100% + 180.14px));
+      transform: translate(0, calc(-1 * 100% + 180.14px));
     }
-    &:nth-child(4) {
+    &:nth-child(3) {
       padding: 0 58.5px;
       background-image: url(../img/features/feat_poly_d4.png);
-      transform: translate(158.9px, calc(-3 * 100% + 324.27px));
+      transform: translate(158.9px, calc(-2 * 100% + 324.27px));
     }
     &:nth-child(5) {
       padding: 0 85.36px;
       background-image: url(../img/features/feat_poly_d5.png);
       transform: translate(664.73px, calc(-4 * 100% + 60.14px));
     }
-    &:nth-child(6) {
+    &:nth-child(4) {
       padding: 0 80.71px;
       background-image: url(../img/features/feat_poly_d6.png);
-      transform: translate(664.73px, calc(-5 * 100% + 220.29px));
+      transform: translate(664.73px, calc(-3 * 100% + 220.29px));
     }
     &:nth-child(7) {
       padding: 0 94.81px;
       background-image: url(../img/features/feat_poly_d7.png);
       transform: translate(516.9px, calc(-6 * 100% + 355.81px));
     }
+  }
+}
+.feat-diamond {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    width: 214px;
+    height: 194px;
+    transform: translate(410.18px, calc(-7 * 240px + 219.14px)) rotate(21deg);
   }
 }

@@ -44,6 +44,7 @@
     display: block;
     padding: 13px 70px;
     text-align: center;
+    transition: color 300ms ease;
     &:hover,
     &:focus,
     &:active {

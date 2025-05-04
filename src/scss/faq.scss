@@ -3,26 +3,28 @@
   padding-bottom: 73px;
 
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(50% - 120px) 68px, calc(50% + 120px) 576.07px;
+  background-size: 48px 43.76px, 48px 56.86px;
+  background-position: calc(50% - 120px) 68px, calc(50% + 120px) 100%;
   @include media(desktop) {
     padding-bottom: 64px;
+    background-size: 236px 215.17px, 176px 208.5px;
     background-position: calc(50% - 410px) 0px,
       calc(50% + 441px) calc(100% - 64px);
   }
 
   background-image: url(../img/faq/faq_butterfly_m.png),
     url(../img/faq/faq_apple_m.png);
-  // @include media(2xres) {
-  //   background-image: url(../img/faq/faq_butterfly_m@2x.png),
-  //     url(../img/faq/faq_apple_m@2x.png);
-  // }
+  @include media(2xres) {
+    background-image: url(../img/faq/faq_butterfly_m@2x.png),
+      url(../img/faq/faq_apple_m@2x.png);
+  }
   @include media(desktop) {
     background-image: url(../img/faq/faq_butterfly_d.png),
       url(../img/faq/faq_apple_d.png);
-    // @include media(2xres) {
-    //   background-image: url(../img/faq/faq_butterfly_d@2x.png),
-    //     url(../img/faq/faq_apple_d@2x.png);
-    // }
+    @include media(2xres) {
+      background-image: url(../img/faq/faq_butterfly_d@2x.png),
+        url(../img/faq/faq_apple_d@2x.png);
+    }
   }
 
   &-title {
@@ -36,54 +38,10 @@
     }
   }
   &-accordion {
-    // position: relative;
     @include media(desktop) {
       margin: 0 auto;
       width: 516px;
     }
-    // &::before {
-    //   position: absolute;
-    //   top: -60px;
-    //   content: '';
-    //   width: 48px;
-    //   height: 43px;
-    //   background-image: url(../img/faq/faq_butterfly_m.png);
-    //   @include media(2xres) {
-    //     background-image: url(../img/faq/faq_butterfly_m@2x.png);
-    //   }
-    //   @include media(desktop) {
-    //     width: 236px;
-    //     height: 215px;
-    //     top: -102px;
-    //     left: -270px;
-    //     background-image: url(../img/faq/faq_butterfly_d.png);
-    //     @include media(2xres) {
-    //       background-image: url(../img/faq/faq-butterfly_d@2x.png);
-    //     }
-    //   }
-    // }
-    // &::after {
-    //   position: absolute;
-    //   right: 0;
-    //   bottom: -73px;
-    //   content: '';
-    //   width: 48px;
-    //   height: 56px;
-    //   background-image: url(../img/faq/faq_apple_m.png);
-    //   @include media(2xres) {
-    //     background-image: url(../img/faq/faq_apple_m@2x.png);
-    //   }
-    //   @include media(desktop) {
-    //     width: 176px;
-    //     height: 208px;
-    //     right: -271px;
-    //     bottom: 0;
-    //     background-image: url(../img/faq/faq_apple_d.png);
-    //     @include media(2xres) {
-    //       background-image: url(../img/faq/faq_apple_d@2x.png);
-    //     }
-    //   }
-    // }
   }
   &-acc-item {
     background-color: $_second_color;
@@ -109,10 +67,7 @@
   &-acc-hide {
     overflow: hidden;
     height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: 400ms ease;
-    transition-property: height, opacity;
+    transition: height 400ms ease;
   }
   &-answer {
     padding-top: 8px;
@@ -138,7 +93,6 @@
   }
   &-acc-item[data-ac='open'] {
     & > .faq-acc-hide {
-      opacity: 1;
       visibility: visible;
     }
     & > .faq-question > .faq-btn > .faq-icon {
@@ -146,29 +100,3 @@
     }
   }
 }
-
-//   background-image: url(../img/faq/faq_butterfly_m.png);
-//   @include media(2xres) {
-//     background-image: url(../img/faq/faq_butterfly_m@2x.png);
-//   }
-//   @include media(desktop) {
-//     width: 236px;
-//     height: 215px;
-//     top: -102px;
-//     left: -270px;
-//     background-image: url(../img/faq/faq_butterfly_d.png);
-//     @include media(2xres) {
-//       background-image: url(../img/faq/faq-butterfly_d@2x.png);
-
-//   background-image: url(../img/faq/faq_apple_m.png);
-//   @include media(2xres) {
-//     background-image: url(../img/faq/faq_apple_m@2x.png);
-//   }
-//   @include media(desktop) {
-//     width: 176px;
-//     height: 208px;
-//     right: -271px;
-//     bottom: 0;
-//     background-image: url(../img/faq/faq_apple_d.png);
-//     @include media(2xres) {
-//       background-image: url(../img/faq/faq_apple_d@2x.png);
