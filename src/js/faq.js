@@ -7,13 +7,36 @@ faqAccordion.addEventListener('click', evt => {
   }
 
   const currentOpen = faqAccordion.querySelector('[data-ac="open"]');
-  // console.log(currentOpen);
+
   if (currentOpen) {
-    currentOpen.dataset.ac = 'close';
+    closeTab(currentOpen);
   }
-  accPanel.dataset.ac = 'open';
-  // console.log(accPanel === currentOpen);
-  if (accPanel === currentOpen && currentOpen) {
-    accPanel.dataset.ac = 'close';
+
+  if (accPanel.dataset.ac === 'open') {
+    closeTab(accPanel);
+  } else {
+    openTab(accPanel);
+  }
+
+  function openTab(el) {
+    const panel = el.lastElementChild;
+    el.dataset.ac = 'open';
+    panel.style.height = panel.scrollHeight + 'px';
+    panel.addEventListener(
+      'transitionend',
+      () => {
+        panel.style.height = 'auto';
+      },
+      { once: true }
+    );
+  }
+
+  function closeTab(el) {
+    const panel = el.lastElementChild;
+    panel.style.height = panel.scrollHeight + 'px';
+    requestAnimationFrame(() => {
+      panel.style.height = '0';
+      delete el.dataset.ac;
+    });
   }
 });
