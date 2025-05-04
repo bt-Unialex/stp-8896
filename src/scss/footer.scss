@@ -44,6 +44,11 @@
     display: block;
     padding: 13px 70px;
     text-align: center;
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fd688d;
+    }
     @include media(desktop) {
       padding: 8px 16px;
     }
