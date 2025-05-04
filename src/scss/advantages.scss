@@ -1,0 +1,91 @@
+.advantages .container {
+    
+}
+
+.advantages-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+    color: #19284c;
+    margin-bottom: 24px;
+
+    @include media(desktop) {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+}
+.advantages-wrapper-left {
+}
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.advantages-item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    width: 288px;
+    height: 72px;
+    background: #3f4661;
+    overflow: hidden;
+}
+.advantages-item-main {
+    padding: 8px 0px 0px 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: #b8ccde;
+    
+}
+.advantages-item-second {
+    border-radius: 16px;
+    padding: 8px;
+    width: 229px;
+    height: 64px;
+    background: #b8ccde;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages-item-title, 
+.advantages-item-description {
+    font-size: 12px;
+    line-height: 1.3;
+    color: #19284c;
+}
+
+.advantages-swipper-pagination {
+    display: inline-flex;
+    gap: 16px;
+
+    @include media(desktop) {
+        display: none;
+    }
+}
+
+.advantages-swipper-pagination-prev {
+    border-radius: 8px;
+    width: 24px;
+    height: 4px;
+    background: #fd688d;
+}
+.advantages-swipper-pagination-next {
+    border-radius: 8px;
+    width: 24px;
+    height: 4px;
+    background: #fafafa;
+}
+
+
+.advantages-image-wrapper {
+    display: none;
+
+    @include media(desktop) {
+        display: block;
+    }
+}
+.advantages-image {
+}
