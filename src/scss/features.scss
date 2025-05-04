@@ -10,7 +10,10 @@
     }
   }
   @include media(desktop) {
-    height: 616px;
+    height: 680px;
+    & .container {
+      height: 657.8px;
+    }
   }
 }
 .feats {
@@ -57,9 +60,9 @@
   }
   @include media(desktop) {
     background: none;
+    display: block;
     padding: 0;
-    gap: 0;
-    // height: 595.81px;
+    height: 595.81px;
   }
 }
 @include media(desktop) {
@@ -157,6 +160,6 @@
     display: block;
     width: 214px;
     height: 194px;
-    transform: translate(410.18px, calc(-7 * 240px + 219.14px)) rotate(21deg);
+    transform: translate(410.18px, -374.73px) rotate(21deg);
   }
 }
