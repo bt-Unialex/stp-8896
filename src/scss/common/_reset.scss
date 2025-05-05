@@ -47,6 +47,10 @@ button {
   // line-height: 1.15;
   // margin: 0
 }
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 
 img {
   display: block;
