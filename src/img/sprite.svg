@@ -22,5 +22,11 @@
         <symbol id="ac-plus" viewBox="0 0 19 19" >
             <path d="M1.83887 9.03906H17.8389M9.83887 1.03906V17.0391" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
         </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 16 32">
+            <path d="M13.543 16.948l-7.543 7.543-1.885-1.885 6.6-6.6-6.6-6.6 1.885-1.885 7.543 7.543c0.25 0.25 0.39 0.589 0.39 0.943s-0.14 0.693-0.39 0.943z"></path>
+        </symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 16 32">
+            <path d="M4.505 16.948l7.543 7.543 1.885-1.885-6.6-6.6 6.6-6.6-1.885-1.885-7.543 7.543c-0.25 0.25-0.39 0.589-0.39 0.943s0.14 0.693 0.39 0.943z"></path>
+        </symbol>
     </defs>
 </svg>

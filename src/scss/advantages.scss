@@ -24,7 +24,7 @@
 .advantages-item {
   display: flex;
   justify-content: space-between;
-  border-radius: 16px;
+  border-radius: 16px 0px 16px 16px;
   width: 288px;
   height: 72px;
   background: #3f4661;
@@ -38,7 +38,7 @@
   color: #b8ccde;
 }
 .advantages-item-second {
-  border-radius: 16px;
+  border-radius: 16px 0px 16px 16px;
   padding: 8px;
   width: 229px;
   height: 64px;
