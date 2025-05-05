@@ -1,66 +1,63 @@
-.description .container {
-
+.description {
+  padding-top: 24px;
+  @include media(desktop) {
+    padding-top: 64px;
+  }
 }
 .description-title {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.3;
-    text-align: center;
-    color: #19284c;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.3;
+  text-align: center;
+  color: #19284c;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    @include media(desktop) {
-        font-size: 48px;
-        margin-bottom: 40px;
-    }
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
 }
 
 .description-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-    @include media(desktop) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 120px;
-    }
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 120px;
+  }
 }
 
-.description-dog-wrapper, 
+.description-dog-wrapper,
 .description-cat-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    @include media(desktop) {
-        width: 50%;
-        gap: 32px;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media(desktop) {
+    width: 50%;
+    gap: 32px;
+  }
 }
 
 .description-dog-wrapper {
-    @include media(desktop) {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .description-dog-image img,
 .description-cat-image img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
-
-
-
 
 .description-text {
-    line-height: 1.3;
-    color: #19284c;
+  line-height: 1.3;
+  color: #19284c;
 }
-
-
-
