@@ -29,6 +29,7 @@ const reviewsSlider = new Swiper('[data-reviews-swiper]', {
       slidesPerView: 2,
       slidesPerGroup: 2,
       centeredSlides: false,
+      spaceBetween: 32,
     },
   },
 });

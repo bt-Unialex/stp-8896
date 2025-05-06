@@ -9,13 +9,21 @@
   color: #19284c;
   margin-bottom: 24px;
 
+
   @include media(desktop) {
     font-size: 48px;
+    margin-bottom: 40px;
   }
 }
 
-[data-reviews-swiper] {
-  max-width: 875px;
+.container [data-reviews-swiper] {
+  margin-left: -16px;
+  margin-right: -16px;
+
+  @include media(desktop) {
+    max-width: 870px;
+    margin: 0 auto;
+  }
 }
 
 [data-reviews-wrapper] {
@@ -29,8 +37,15 @@ ul>[data-reviews-slide] {
   box-sizing: border-box;
   border-radius: 14px;
   padding: 16px;
-  // box-shadow: 3px 3px 0 0 #654d97;
+  box-shadow: 3px 3px 0 0 #654d97;
   background: #7864a1;  
+  margin-bottom: 3px;
+
+
+  @include media(desktop) {
+    border-radius: 20px;
+    padding: 32px;
+  }
 }
 
 [data-reviews-slide]:last-of-type {
@@ -49,14 +64,23 @@ ul>[data-reviews-slide] {
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
+
+    @include  media(desktop) {
+      margin-top: 56px;
+    }
 }
 
 [data-reviews-page] {
+  border-radius: 8px;
   width: 24px;
   height: 4px;
   background-color: #fafafa;
-  border-radius: 8px;
+
   transition: background-color 0.3s;
+
+  @include  media(desktop) {
+    height: 8px;
+  }
 }
 
 [data-reviews-page].active {
@@ -93,29 +117,51 @@ ul>[data-reviews-slide] {
 
 .reviews-item-left img {
   object-fit: cover;
+
+  @include media(desktop) {
+    border-radius: 8px;
+    width: 124px;
+    height: 153px;
+  }
 }
 .reviews-item-right {
   flex: 1;
   display: inline-flex;
   flex-direction: column;
   gap: 6px;
+
+  @include media(desktop) {
+    gap: 15px;
+  }
 }
 .reviews-item-stars {
+  
 }
+
+.reviews-item-icon {
+  @include media(desktop) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .reviews-item-name {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
   color: #fafafa;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
 }
 .reviews-item-text {
   font-size: 12px;
   line-height: 130%;
   color: #fafafa;
+
+    @include media(desktop) {
+      font-size: 16px;
+  }
 }
-
-.swiper-slide--empty {
-
-}
-
