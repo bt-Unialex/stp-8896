@@ -70,20 +70,20 @@
 .header-nav-item {
   
 }
-.header-nav-link {
+
+[data-header-link] {
     height: 37px;
     border: 2px solid #fd688d;
     border-radius: 16px;
     padding: 6px 14px;  
-}
+    transition: background-color 0.3s ease;
 
-.header-nav-link:hover,
-.header-nav-link:active {
-    background-color: #fd688d;
-}
 
-.header-nav-link.active {
+    &:hover,
+    &:active,
+    &[data-active="true"] {
     background-color: #fd688d;
+    }
 }
 
 .mobmenu-overlay {
@@ -117,7 +117,6 @@
     height: 100%;
     border-radius: 20px 0 0 20px;
     background: #b8ccde;
-
     padding: 91.5px 16px 146.5px;
 
     transform: translateX(100%);
@@ -139,8 +138,6 @@
     stroke-width: 3px;
     stroke: #fdfdfd;
 }
-.mobmenu-close-icon {
-}
 
 .mobmenu-nav-list {
     display: flex;
@@ -150,10 +147,4 @@
     text-transform: uppercase;
     text-align: center;
     color: #614796;
-}
-.mobmenu-nav-item {
-    
-}
-.mobmenu-nav-link:active {
-
 }
