@@ -61,12 +61,21 @@
 
 [data-swiper] {
   overflow: hidden;
+
+  @include media(desktop) {
+    pointer-events: none;
+  }
 }
 
 [data-swiper-wraper] {
   display: flex;
   width: 200%;
   transition: transform 300ms ease;
+
+  @include media(desktop) {
+    transition: none;
+    transform: none;
+  }
 }
 
 [data-swiper-slide] {
