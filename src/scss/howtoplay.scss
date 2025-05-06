@@ -100,10 +100,12 @@
     column-gap: 29px;
     flex-wrap: nowrap;
     margin: 0;
+    padding: 8.5px 0;
 
     &-item {
       width: 241px;
-      padding: 16px 16px 36px;
+      height: 220px;
+      padding: 16px;
       box-shadow: 5px 4px 0 0 rgba(99, 86, 100, 0.7);
       &::before {
         font-size: 32px;
@@ -134,7 +136,7 @@
       &:nth-child(2) {
         transform: translate(
           calc(132.5px + (100% + 29px) * 2),
-          calc(-34.5px - 100%)
+          calc(-51.5px - 100%)
         );
       }
     }
