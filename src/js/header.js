@@ -1,8 +1,8 @@
-const overlay = document.querySelector("#mobmenu-overlay");
+const overlay = document.querySelector("[data-mobmenu-overlay]");
 const openBtn = document.querySelector("[data-action='modal-open']");
 const closeBtn = document.querySelector("[data-action='modal-close']");
-const navLinks = document.querySelectorAll("#mobmenu-nav-item");
-const menuLinks = document.querySelectorAll('.header-nav-link');
+const navLinks = document.querySelectorAll("[data-nav-item]");
+const menuLinks = document.querySelectorAll("[data-header-link]");
 
 
 openBtn.addEventListener("click", () => {
@@ -21,10 +21,9 @@ navLinks.forEach(link => {
 
 document.addEventListener("DOMContentLoaded", () => {
   menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      menuLinks.forEach(l => l.classList.remove('active'));
-
-      link.classList.add('active');
+    link.addEventListener("click", () => {
+      menuLinks.forEach(l => l.setAttribute("data-active", "false"));
+      link.setAttribute("data-active", "true");
     });
   });
 });
