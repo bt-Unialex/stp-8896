@@ -86,7 +86,7 @@
   width: 24px;
   height: 4px;
   background: #fafafa;
-  transition: background 300ms;
+  transition: background-color 300ms ease;
 }
 
 [data-swiper-page].active {
