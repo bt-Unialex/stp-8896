@@ -94,6 +94,7 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  user-select: none;
 
   @include media(desktop) {
     flex-direction: row;
@@ -111,7 +112,7 @@
 }
 
 [data-popup-btn='accept']:hover {
-  font-weight: 700;
+  // font-weight: 700;
   box-shadow: 0 4px 17px 0 #3d1b82;
   background: #503684;
 }
@@ -124,9 +125,8 @@
 }
 
 [data-popup-btn='decline']:hover {
-  font-weight: 700;
+  // font-weight: 700;
   border: 4px solid #503684;
-  //   box-shadow: 0 2px 4px 0 #503684;
   box-shadow: 0 4px 17px 0 #3d1b82;
 }
 

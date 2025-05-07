@@ -91,8 +91,8 @@ ul > [data-reviews-slide] {
   background-color: transparent;
   display: none;
 
-  &:hover {
-  }
+  // &:hover {
+  // }
 
   @include media(desktop) {
     display: block;
@@ -137,8 +137,8 @@ ul > [data-reviews-slide] {
     gap: 15px;
   }
 }
-.reviews-item-stars {
-}
+// .reviews-item-stars {
+// }
 
 .reviews-item-icon {
   @include media(desktop) {

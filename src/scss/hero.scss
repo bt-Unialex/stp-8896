@@ -84,7 +84,8 @@
   font-size: 16px;
   line-height: 1.3;
   color: $_second_color;
-  transition: background-color 300ms ease;
+  transition: 300ms ease;
+  transition-property: background-color, box-shadow, transform;
 
   @include media(desktop) {
     grid-area: button;
@@ -97,4 +98,6 @@
 .hero-btn:hover,
 .hero-btn:active {
   background-color: #503684;
+  // transform: translateY(-2px);
+  box-shadow: 0 4px 4px 0 #462588, 0 4px 17px 0 #3d1b82;
 }
