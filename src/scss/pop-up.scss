@@ -103,27 +103,27 @@
   }
 }
 
-[data-popup-accept] {
+[data-popup-btn='accept'] {
   border: none;
   box-shadow: 0 2px 4px 0 #462588;
   background: #614796;
   color: #fafafa;
 }
 
-[data-popup-accept]:hover {
+[data-popup-btn='accept']:hover {
   font-weight: 700;
   box-shadow: 0 4px 17px 0 #3d1b82;
   background: #503684;
 }
 
-[data-popup-decline] {
+[data-popup-btn='decline'] {
   border: 4px solid #614796;
   box-shadow: 0 2px 4px 0 #462588;
   background: transparent;
   color: #503684;
 }
 
-[data-popup-decline]:hover {
+[data-popup-btn='decline']:hover {
   font-weight: 700;
   border: 4px solid #503684;
   //   box-shadow: 0 2px 4px 0 #503684;
