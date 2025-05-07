@@ -1,20 +1,20 @@
 .hero {
   padding: 100px 0 80px;
-  background-image: url(../img/hero/hero_bg_m.jpg);
+  background-image: url(../img/hero/hero_bg_m.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/hero/hero_bg_m@2x.jpg);
+    background-image: url(../img/hero/hero_bg_m@2x.png);
   }
 
   @include media(desktop) {
     padding: 216px 0 148px;
-    background-image: url(../img/hero/hero_bg_d.jpg);
+    background-image: url(../img/hero/hero_bg_d.png);
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/hero/hero_bad_d2x.png);
+      background-image: url(../img/hero/hero_bg_d@2x.png);
     }
   }
 }
