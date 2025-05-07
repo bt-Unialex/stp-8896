@@ -61,10 +61,10 @@ ul > [data-reviews-slide] {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 16px;
+  padding: 16px 0;
 
   @include media(desktop) {
-    margin-top: 56px;
+    margin-top: 40px;
   }
 }
 
@@ -92,7 +92,6 @@ ul > [data-reviews-slide] {
   display: none;
 
   &:hover {
-
   }
 
   @include media(desktop) {
