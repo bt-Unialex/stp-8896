@@ -1,10 +1,10 @@
 .hero {
   padding: 100px 0 80px;
-  background-image: url(../img/hero/hero_bg_m.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 
+  background-image: url(../img/hero/hero_bg_m.png);
   @media (min-resolution: 2dppx) {
     background-image: url(../img/hero/hero_bg_m@2x.png);
   }
