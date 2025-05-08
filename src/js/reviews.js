@@ -30,7 +30,6 @@ const reviewsSlider = new Swiper('[data-reviews-swiper]', {
       slidesPerGroup: 2,
       centeredSlides: false,
       spaceBetween: 32,
-
     },
   },
 });
