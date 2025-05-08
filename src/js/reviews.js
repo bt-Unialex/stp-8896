@@ -6,6 +6,7 @@ const reviewsSlider = new Swiper('[data-reviews-swiper]', {
   centeredSlides: true,
   slidesPerGroup: 1,
   spaceBetween: 8,
+  loop: true,
 
   pagination: {
     el: '[data-reviews-pagination]',
