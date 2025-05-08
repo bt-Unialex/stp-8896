@@ -1,6 +1,6 @@
-import smallest from "../img/hero/aabg_smalest_d.png"
-import small from "../img/hero/aabg_smalest_d.png"
-import large from "../img/hero/aabg_smalest_d.png"
+import smallest from "/img/hero/aabg_smalest_d.png"
+import small from "/img/hero/aabg_smalest_d.png"
+import large from "/img/hero/aabg_smalest_d.png"
 
 document.addEventListener('DOMContentLoaded', () => {
   const aadiv = document.querySelector('.aadiv');
