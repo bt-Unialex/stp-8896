@@ -111,10 +111,11 @@
 }
 
 .mobmenu-modal {
-  position: absolute;
+  // position: absolute;
   top: 0;
   right: 0;
-  width: 261px;
+  width: 100vw;
+  // width: 261px;
   height: 100%;
   border-radius: 20px 0 0 20px;
   background: #b8ccde;
@@ -125,13 +126,14 @@
 }
 
 [data-visible='open'] .mobmenu-modal {
-  transform: translateX(0);
+  transform: translateX(59px);
 }
 
 .mobmenu-close-button {
   position: absolute;
   top: 14px;
-  right: 16px;
+  left: 205px;
+  // right: 16px;
   display: block;
   background-color: transparent;
   border: none;
@@ -141,6 +143,8 @@
 }
 
 .mobmenu-nav-list {
+  margin-right: auto;
+  width: 229px;
   display: flex;
   flex-direction: column;
   gap: 43px;
