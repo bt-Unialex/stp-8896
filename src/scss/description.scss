@@ -1,7 +1,9 @@
 .description {
   padding-top: $_mob_section_padding * 2;
+  scroll-margin-top: 108px - $_mob_section_padding;
   @include media(desktop) {
     padding-top: $_desc_section_padding * 2;
+    scroll-margin-top: 108px - $_desc_section_padding;
   }
 }
 .description-title {
