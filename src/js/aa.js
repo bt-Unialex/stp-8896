@@ -1,6 +1,6 @@
-import smallest from "/img/hero/aabg_smalest_d.png"
-import small from "/img/hero/aabg_smalest_d.png"
-import large from "/img/hero/aabg_smalest_d.png"
+import smallest from '/img/hero/aabg_smalest_d.png';
+import small from '/img/hero/aabg_smalest_d.png';
+import large from '/img/hero/aabg_smalest_d.png';
 
 document.addEventListener('DOMContentLoaded', () => {
   const aadiv = document.querySelector('.aadiv');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let rule;
     if (choice) {
       switch (choice) {
-        case 'ss':url(/stp-8896/assets/hero_bg_d-85202e12.png)
+        case 'ss':
           rule = `background-image: url(${smallest});`;
           break;
         case 'sl':
