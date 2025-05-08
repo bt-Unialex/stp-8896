@@ -92,6 +92,7 @@ ul > [data-reviews-slide] {
   position: absolute;
   left: 72px;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 10;
 }
 
@@ -99,6 +100,7 @@ ul > [data-reviews-slide] {
   position: absolute;
   right: 72px;
   top: 50%;
+  transform: translateY(-50%);
   z-index: 10;
 }
 
