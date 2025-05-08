@@ -46,17 +46,6 @@ ul > [data-reviews-slide] {
   }
 }
 
-[data-reviews-slide]:last-of-type {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    visibility: hidden;
-    pointer-events: none;
-    background: transparent;
-  }
-}
-
 [data-reviews-pagination] {
   display: flex;
   justify-content: center;
