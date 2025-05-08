@@ -3,7 +3,6 @@ import 'swiper/css/bundle';
 
 const reviewsSlider = new Swiper('[data-reviews-swiper]', {
   slidesPerView: 1,
-  centeredSlides: true,
   slidesPerGroup: 1,
   spaceBetween: 8,
   loop: true,
@@ -31,6 +30,7 @@ const reviewsSlider = new Swiper('[data-reviews-swiper]', {
       slidesPerGroup: 2,
       centeredSlides: false,
       spaceBetween: 32,
+
     },
   },
 });
